@@ -1,0 +1,127 @@
+/* index.css — "Bad Dreams" Themed Styling */
+
+/* 🔁 Reset & Base Styling */
+* {
+  box-sizing: border-box; /* Ensures consistent sizing across elements */
+  margin: 0;               /* Removes default spacing */
+  padding: 0;
+}
+
+html, body {
+  height: 100%;                            /* Full height pages */
+  background-color: #0d1117;              /* Deep navy black theme */
+  color: #e0e0e0;                         /* Light gray text */
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; /* Clean modern font stack */
+  line-height: 1.6;                       /* Improves readability */
+}
+
+/* 🧱 Main container */
+.container {
+  background-color: transparent;          /* Let themed backgrounds show through */
+}
+
+/* 🧭 Header styles */
+header {
+  background-color: #161b22;              /* Slightly lighter dark header */
+  color: #ffffff;
+}
+
+/* 🎴 Card Styles */
+.card {
+  background-color: #1f2733;              /* Dark card background */
+  border: 1px solid #2c313a;              /* Subtle border */
+  border-radius: 10px;                    /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);    /* Soft outer glow */
+  color: #e6e6e6;                         /* Light text for readability */
+}
+
+/* 🔘 Primary Action Buttons */
+.btn-primary {
+  background-color: #c62828;              /* Deep red */
+  border-color: #c62828;
+}
+
+.btn-primary:hover {
+  background-color: #a91b1b;              /* Darker on hover */
+  border-color: #a91b1b;
+}
+
+/* 🔁 Outline Primary Button (e.g. guess placement) */
+.btn-outline-primary {
+  border-color: #c62828;
+  color: #c62828;
+}
+
+.btn-outline-primary:hover {
+  background-color: #c62828;
+  color: #fff;                            /* Text turns white */
+}
+
+/* 🔳 Secondary Buttons (Instructions, Cancel) */
+.btn-outline-secondary {
+  border-color: #777;                     /* Medium gray border */
+  color: #ccc;                            /* Light gray text */
+}
+
+.btn-outline-secondary:hover {
+  background-color: #333;                 /* Darker fill on hover */
+  color: #fff;
+}
+
+/* 🪟 Modal Dialog Boxes */
+.modal-content {
+  background-color: #1f2733;              /* Same as card for consistency */
+  color: #fff;
+  border: 1px solid #2c313a;
+}
+
+.modal-header,
+.modal-footer {
+  border-color: #2c313a;
+}
+
+/* 📊 Progress Bars (collected / failures / timer) */
+.progress {
+  background-color: #2c313a;              /* Bar background */
+}
+
+.progress-bar.bg-warning {
+  background-color: #ffcc00;              /* Yellow warning bar (for timer) */
+}
+
+.progress-bar.bg-danger {
+  background-color: #c62828;              /* Red danger bar (failures or time low) */
+}
+
+.progress-bar.bg-success {
+  background-color: #2e7d32;              /* Green success bar (collected cards) */
+}
+
+/* 📣 Alert Info Box */
+.alert-info {
+  background-color: #21262d;              /* Dark neutral info box */
+  color: #ccc;
+  border-color: #333;
+}
+
+/* ⏲️ Red warning text (e.g. timer under 5s) */
+.text-danger {
+  color: #ff4444;
+  font-weight: bold;
+}
+
+/* 🔗 Links */
+a {
+  color: #58a6ff;                         /* Blue links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;             /* Underline on hover */
+}
+
+/* 🖼 Image scaling */
+img {
+  max-width: 100%;                        /* Responsive scaling */
+  height: auto;
+}

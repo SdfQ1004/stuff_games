@@ -1,0 +1,51 @@
+/* Home.css — Styles the main home screen of the app */
+
+/* 🌌 Background container for the homepage */
+.home-page {
+  background-color: #0f1d2d; /* Dark night-themed base color */
+  background-image: url('/images/nightmare_login.png'); /* 👈 Cartoon creepy background image */
+  background-size: cover; /* Make sure the background fills the container */
+  background-position: center; /* Center the background image */
+  color: #ffe8b3; /* Pale yellow text color */
+  min-height: 80vh; /* Take most of the screen height */
+  padding: 2rem; /* Add spacing around content */
+  border-radius: 12px; /* Slightly rounded edges for container */
+  box-shadow: 0 0 10px rgba(0,0,0,0.4); /* Soft shadow around content */
+}
+
+/* 🧠 Main heading on the homepage */
+.home-title {
+  font-family: 'Comic Sans MS', cursive; /* Creepy/fun font style */
+  color: #ffe8b3; /* Yellowish text to match theme */
+  font-size: 2.5rem; /* Large font for title */
+  margin-bottom: 1rem; /* Space below title */
+}
+
+/* 📝 Subheading text describing the game */
+.home-subtitle {
+  font-size: 1.1rem; /* Slightly larger body text */
+  max-width: 600px; /* Don't stretch too wide */
+  margin: 0 auto; /* Center horizontally */
+  color: #ffe8b3; /* Consistent themed text color */
+}
+
+/* 🔘 Glowing and oversized start button */
+.start-button {
+  background-color: #d66134; /* Fiery orange-red */
+  color: #fff; /* White text */
+  font-weight: bold;
+  font-size: 4rem; /* Massive button text */
+  padding: 4rem 6rem; /* Thick padding for large button area */
+  border: none; /* No border */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(214, 97, 52, 0.5); /* Orange glow around button */
+  transition: all 0.3s ease-in-out; /* Smooth hover effect */
+  text-shadow: 1px 1px 3px #000; /* Slight black shadow on text for readability */
+}
+
+/* 🎆 Hover effect: even bigger and glowier */
+.start-button:hover {
+  background-color: #b14f28; /* Slightly darker red */
+  box-shadow: 0 0 30px rgba(255, 97, 52, 0.8); /* Brighter glow */
+  transform: scale(1.05); /* Slight zoom effect */
+}

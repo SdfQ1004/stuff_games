@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ✅ Basic Document Setup -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 🌐 Page Title -->
+    <title>Stuff Happens Game</title>
+
+    <!-- 🎨 Favicon for browser tab -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- 🧠 Creepy custom Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet" />
+
+    <!-- 🌒 Global dark theme overrides -->
+    <style>
+      body {
+        background-color: #0d1117; /* Very dark navy background */
+        color: #e6e6e6;            /* Light gray text for contrast */
+        font-family: 'Creepster', cursive; /* Applies spooky font globally */
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        color: #e0e0e0; /* Links match body text color */
+      }
+
+      button {
+        font-family: inherit; /* Ensure buttons also use Creepster font */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 📦 React mounts into this root div -->
+    <div id="root"></div>
+
+    <!-- 🚀 Load main JS module (entry point defined in Vite config) -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

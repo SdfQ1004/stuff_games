@@ -1,0 +1,61 @@
+/* History.css — Styles for the Game History page with a spooky theme */
+
+/* 📦 Container for the entire history section */
+.history-wrapper {
+  background-color: rgba(15, 29, 45, 0.8); /* Dark translucent background */
+  padding: 2rem;                           /* Inner spacing */
+  border-radius: 12px;                     /* Rounded corners */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);  /* Soft shadow for depth */
+  color: #ffe8b3;                          /* Pale yellow text */
+}
+
+/* 🧠 Main heading for the history page */
+.history-title {
+  font-family: 'Creepster', cursive;       /* Creepy handwritten font */
+  font-size: 2.5rem;                        /* Large size */
+  text-align: center;                      /* Centered text */
+  margin-bottom: 1.5rem;                   /* Spacing below heading */
+  color: #ffe8b3;
+  text-shadow: 1px 1px 5px #000;           /* Subtle glowing shadow */
+}
+
+/* ⚠️ Message shown when no game history exists */
+.history-empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ccc;                             /* Muted gray for neutral tone */
+}
+
+/* 🧾 Table Styles (Game Records) */
+.custom-history-table {
+  background-color: #1c2a3a;               /* Dark blue table background */
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;                        /* Clip borders if necessary */
+}
+
+/* 📌 Table Header Cells */
+.custom-history-table th {
+  background-color: #2c3f57;               /* Deeper blue header */
+  color: #ffe8b3;                          /* Bright yellow for contrast */
+  border: none;                            /* No visible border lines */
+}
+
+/* 📌 Table Data Cells */
+.custom-history-table td {
+  background-color: #26394d;               /* Slightly lighter than header */
+  border: none;                            /* Clean and borderless look */
+}
+
+/* ⬅️ Back to Home Button */
+.back-home-button {
+  border-color: #ffe8b3;                   /* Pale yellow border */
+  color: #ffe8b3;                          /* Matching text color */
+  font-weight: bold;
+}
+
+/* 👆 Hover effect for back button */
+.back-home-button:hover {
+  background-color: #ffe8b3;               /* Invert to yellow background */
+  color: #1c1c1c;                          /* Dark text for readability */
+}

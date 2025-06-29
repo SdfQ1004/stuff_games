@@ -1,0 +1,51 @@
+/* ========== 🌌 Page Layout Styles for "Bad Dreams" Theme ========== */
+
+/* 🔲 Wrapper for the entire page (sets background and text color) */
+.layout-wrapper {
+  background-color: #0f1d2d; /* Deep navy as fallback background */
+  background-image: url('/images/nightmare_pagelayout.png'); /* 👁 Optional eerie background image */
+  background-size: cover; /* Stretch background to cover the page */
+  background-position: bottom center; /* Align image at bottom center */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  color: #ffe8b3; /* Pale yellow text for good contrast on dark */
+}
+
+/* 🔳 Top header bar containing navigation and branding */
+.header-bar {
+  background-color: rgba(20, 30, 45, 0.95); /* Semi-transparent dark background */
+  color: #ffe8b3; /* Inherit text color from wrapper */
+  border-bottom: 2px solid #222; /* Thin separator line */
+}
+
+/* 🎃 Stylized animated title for the header */
+.creepy-header {
+  font-family: 'Creepster', cursive; /* Use spooky font (make sure it's loaded) */
+  font-size: 2.8rem; /* Large eye-catching font size */
+  color: #ffe8b3; /* Pale yellow to match theme */
+  animation: floatCreep 2.5s ease-in-out infinite; /* Infinite floating animation */
+  cursor: pointer; /* Makes the text feel clickable */
+  text-shadow: 
+    0 0 10px #ff6666, /* Outer reddish glow */
+    0 0 20px #ff6666; /* Extended glow effect */
+}
+
+/* ✨ Keyframes for the floating animation used by .creepy-header */
+@keyframes floatCreep {
+  0%, 100% {
+    transform: translateY(0px); /* Default position */
+    text-shadow: 0 0 10px #ff6666, 0 0 20px #ff6666; /* Normal glow */
+  }
+  50% {
+    transform: translateY(-4px); /* Slight upward float */
+    text-shadow: 0 0 15px #ff3333, 0 0 25px #ff3333; /* Brighter red glow mid-float */
+  }
+}
+
+/* 🪧 Optional smaller logo/fallback text (if .creepy-header isn't used) */
+.layout-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', cursive; /* Friendly/quirky fallback */
+  color: #ffe8b3;
+  cursor: pointer;
+}

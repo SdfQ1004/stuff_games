@@ -1,0 +1,94 @@
+/* 🌌 Overall Page Background & Layout */
+.login-page {
+  background-color: #0f1d2d; /* Deep navy background to simulate night */
+  background-image: url('/images/nightmare_login.png'); /* Optional creepy background image */
+  background-repeat: no-repeat;
+  background-size: cover; /* Make image cover the entire page */
+  background-position: center;
+  color: #ffe8b3; /* Soft yellow text for contrast and readability */
+  min-height: 100vh; /* Full viewport height */
+  padding: 2rem; /* Breathing room around the content */
+}
+
+/* 📦 Login Card Container */
+.login-box {
+  background-color: rgba(15, 29, 45, 0.85); /* Transparent dark box over background */
+  border-radius: 16px; /* Rounded corners */
+  max-width: 420px; /* Width constraint for readability */
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Slight glow for emphasis */
+}
+
+/* 📝 Login Page Title */
+.login-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Creepy cartoon-like typeface */
+  color: #ffe8b3; /* Matches page text for consistency */
+}
+
+/* ✏️ Text Inputs */
+.login-input {
+  background-color: #1c2a3a; /* Slightly lighter than background box */
+  border: none; /* Remove default border */
+  color: #ffe8b3; /* Text inside inputs matches theme */
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.login-input::placeholder {
+  color: #ccc; /* Placeholder text in a lighter shade */
+}
+
+/* 🔓 Login Button */
+.login-button {
+  background-color: #d66134; /* Deep orange (adds contrast + urgency) */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  transition: background-color 0.2s ease-in-out; /* Smooth hover animation */
+}
+
+.login-button:hover {
+  background-color: #b14f28; /* Slightly darker red on hover */
+}
+
+/* 💬 Instruction Modal Styling */
+.modal-content {
+  background-color: #1c2a3a; /* Match card style */
+  color: #ffe8b3;
+  border: 1px solid #333; /* Subtle border for structure */
+}
+
+.modal-header,
+.modal-footer {
+  border-color: #2c2c2c; /* Slight contrast separation */
+}
+
+.modal-title {
+  color: #ffe8b3; /* Emphasize title in modal */
+}
+
+/* 🧭 Extra Button Styling (like Show Instructions) */
+.btn-outline-secondary {
+  border-color: #ccc; /* Gray border */
+  color: #ccc; /* Text matches border */
+}
+
+.btn-outline-secondary:hover {
+  background-color: #ccc;
+  color: #000; /* Text turns black on light background */
+}
+
+/* ❌ Close Button in Modals */
+.btn-close {
+  filter: invert(100%); /* Makes close button white on dark background */
+}
+
+/* 💡 Text for small notes or disclaimers */
+.text-light {
+  font-size: 0.9rem;
+  opacity: 0.8; /* Subtle appearance */
+}

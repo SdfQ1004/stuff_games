@@ -1,0 +1,44 @@
+/* 🎮 GameDetail.css — Styling for Game Detail Page Table */
+
+/* 🧱 Base table layout */
+.gamedetail-table {
+  background-color: #1c2a3a;           /* Deep blue background for table body */
+  color: #ffe8b3;                      /* Soft yellow text for readability */
+  border-radius: 10px;                /* Rounded corners */
+  overflow: hidden;                   /* Hide any overflow (useful for rounded edges) */
+  width: 100%;                        /* Full width table */
+  border-collapse: separate;         /* Keep borders separate for rounded effects */
+  border-spacing: 0;                 /* Remove spacing between cells */
+}
+
+/* 🧩 Table header styling */
+.gamedetail-table th {
+  background-color: #2c3f57;         /* Darker blue for header background */
+  color: #ffe8b3;                    /* Yellow text to match theme */
+  font-weight: bold;                 /* Emphasize header text */
+  text-align: center;                /* Center align text in header */
+  padding: 12px;                     /* Add space around text */
+  border-bottom: 2px solid #444;     /* Separator line below header */
+}
+
+/* 🔢 Table data cell styling */
+.gamedetail-table td {
+  background-color: #26394d;         /* Slightly lighter than header for contrast */
+  color: #eee;                       /* Light grey text for clarity */
+  padding: 10px;                     /* Space around text in cells */
+  text-align: center;               /* Align content in center */
+  vertical-align: middle;          /* Vertically center content in each cell */
+  border-top: 1px solid #333;       /* Subtle line between rows */
+}
+
+/* 🖱️ Row hover effect for interactivity */
+.gamedetail-table tr:hover td {
+  background-color: #34485d;         /* Change background on hover for visibility */
+}
+
+/* 🖼️ Image styling inside table */
+.gamedetail-table img {
+  border-radius: 6px;                /* Slightly round corners */
+  border: 1px solid #444;            /* Thin border for definition */
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);  /* Soft shadow for depth */
+}

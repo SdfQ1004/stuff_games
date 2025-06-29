@@ -1,0 +1,52 @@
+/* 🌐 Root container styling */
+#root {
+  max-width: 1280px;         /* Limits the maximum width of the content */
+  margin: 0 auto;            /* Centers the content horizontally */
+  padding: 2rem;             /* Adds spacing inside the container */
+  text-align: center;        /* Centers all text inside this element */
+}
+
+/* 🖼 Logo base styling */
+.logo {
+  height: 6em;               /* Sets the logo height */
+  padding: 1.5em;            /* Adds space around the logo */
+  will-change: filter;       /* Optimizes animation performance */
+  transition: filter 300ms;  /* Smooth transition effect on hover */
+}
+
+/* 🎨 Glow effect when hovering over any logo */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa); /* Adds glowing blue-purple shadow */
+}
+
+/* 🧬 React logo hover effect with unique color */
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa); /* Adds glowing React-blue shadow */
+}
+
+/* 🔄 Logo spinning animation definition */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);     /* Start angle */
+  }
+  to {
+    transform: rotate(360deg);   /* End angle (full circle) */
+  }
+}
+
+/* ⚙️ Applies spinning animation to the second link's logo when motion is allowed */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear; /* Spins forever every 20s */
+  }
+}
+
+/* 🃏 Generic card styling */
+.card {
+  padding: 2em;   /* Adds spacing inside card */
+}
+
+/* 📚 Faded style for doc references or notes */
+.read-the-docs {
+  color: #888;    /* Light gray text for less emphasis */
+}

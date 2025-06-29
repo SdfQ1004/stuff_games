@@ -1,0 +1,82 @@
+/* 🎮 GameStart.css — spooky cartoon style for the Bad Dreams game round */
+
+/* 🌌 Main container wrapping the entire game view */
+.gamestart-container {
+  background-color: #0f1d2d; /* Deep navy background */
+  /* background-image: url('/images/nightmare_gamestart.png'); */ /* Optional background */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem;
+  border-radius: 12px;
+  color: #ffe8b3; /* Pale yellow text for contrast */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Subtle outer glow */
+}
+
+/* 🧟‍♂️ Game Title Header */
+.gamestart-title {
+  font-family: 'Creepster', cursive; /* Creepy display font */
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffe8b3; /* Theme text color */
+}
+
+/* 📊 Game stats row (cards collected / mistakes) */
+.gamestart-stats {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* 📈 Progress bar styling */
+.progress {
+  background-color: #2a2a2a; /* Dark neutral base */
+  height: 16px;
+  border-radius: 10px;
+}
+
+/* 🃏 Individual card styling */
+.card {
+  background-color: #1f2733; /* Dark gray-blue card background */
+  border: 1px solid #333;     /* Slight border for contrast */
+  color: #ffe8b3;             /* Match theme text */
+}
+
+/* 🧾 Card name (inside .card-body) */
+.card-body h6 {
+  font-weight: bold;
+}
+
+/* 🔘 Base button styling (shared) */
+.btn {
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* 🔷 Primary action button (e.g., "Next Card") */
+.btn-primary {
+  background-color: #d66134; /* Bold orange-red */
+  border-color: #d66134;
+}
+
+.btn-primary:hover {
+  background-color: #b14f28; /* Slightly darker on hover */
+}
+
+/* 🟠 Ghost-outline buttons (e.g., guess buttons) */
+.btn-outline-primary {
+  border-color: #d66134;
+  color: #d66134;
+}
+
+.btn-outline-primary:hover {
+  background-color: #d66134;
+  color: white;
+}
+
+/* 💬 Feedback alert (correct/incorrect) */
+.alert-info {
+  background-color: #1a1f26; /* Dark muted background */
+  color: #fff;
+  border: 1px solid #444;
+}
